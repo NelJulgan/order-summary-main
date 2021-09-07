@@ -23,7 +23,6 @@ body{
   background-size: contain;
   background-color: var(--Pale-blue);  
 }
-
 .main-container{
   height: 95vh;    
   align-items: center;
@@ -34,18 +33,12 @@ body{
 
 .container{
   width: 450px;
-  height: 700px;
+  height: 710px;
   background-color: #fff;
   align-items: center;
   justify-content: center;
   border-radius: 20px;
-  overflow: hidden;  
-  box-shadow:  0px 10px 50px rgba(131, 126, 126, 0.8);
-            
-}
-
-.text-center{
-  text-align: center;
+  overflow: hidden; 
 }
 
 .inner-container{
@@ -56,8 +49,7 @@ body{
   text-align: center;
 }
 
-.inner-container .title{
- 
+.inner-container .title{ 
   font-size: 1.9rem;
   font-weight: 900;
   color: var(--Dark-blue);
@@ -78,7 +70,7 @@ body{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 25px;
+  padding: 30px;
 }
 
 .anual-plan{
@@ -91,27 +83,27 @@ body{
   margin-left: 20px;
 }
 
-.anual-plan h5{
+.anual-plan h3{
   font-weight: 700;
-  font-size: 1rem;
+  font-size: 1.1rem;
 }
+
 .anual-plan p{
- color: #69779b;
+  color: #69779b;
 }
-
+ 
 .plan-container .change{
- font-weight: 700;
- font-size: 0.9rem;
- transition: 0.3s ease;
- color: var(--Bright-blue);
- }
+  font-weight: 700;
+  font-size: 0.9rem;
+  transition: 0.3s ease;
+  color: var(--Bright-blue);
+}
 .plan-container .change:hover{
-  text-decoration: none;
-  opacity: 0.7;
+   text-decoration: none;
+   opacity: 0.7;
 }
 
-
-a.proceed-btn{
+ a.proceed-btn{
   color: #fff;
   display: block;
   border: none;
@@ -120,15 +112,15 @@ a.proceed-btn{
   padding: 15px 0;
   text-decoration: none;
   font-weight: 700;
- margin: 35px 0;
- box-shadow:  0px 10px 20px rgba(56, 41, 224, 0.5);
+ margin: 30px 0;
+ box-shadow:  0px 10px 20px rgba(56, 41, 224, 0.3);
  transition: 0.3s ease;
 }
 
 a.proceed-btn:hover{
 opacity: 0.7;
 }
-
+ 
 a.cancel-btn{
   color:var(--Desaturated-blue);
   text-decoration: none;
@@ -143,55 +135,3 @@ a.cancel-btn:hover{
 .attribution{
   font-size: 11px;
 }
-
-@media (min-width: 375px) {
-  .container{
-    width: 350px;
-    height: 600px;
-    background-color: #fff;
-    align-items: center;
-    justify-content: center;
-    border-radius: 20px;
-    overflow: hidden;  
-    box-shadow:  0px 10px 50px rgba(190, 190, 190, 0.8);              
-  }
-  .inner-container .title{
- 
-    font-size: 1.5rem;
-    font-weight: 900;
-    color: var(--Dark-blue);
-    padding-top: 1rem;
-    margin-bottom: 5px;
-  }
-
-  .note{  
-    font-size: 14px;
-    margin-bottom: 10px;
-    
-  }
-
-  .anual-plan h5{
-    font-weight: 700;
-    font-size: 14px;
-  }
-  .anual-plan p{
-   color: #69779b;
-   font-size: 14px;
-  }
-  
-  .plan-container .change{
-   font-weight: 700;
-   font-size: 0.9rem;
-   }
-   .plan-container{ 
-    
-    padding: 15px;
-  }
-
-  a.proceed-btn{
- 
-   margin: 20px 0;
-  
-  }
-
-} ;
