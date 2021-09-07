@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+*{
+  /* Primary */
+  --Pale-blue: hsl(225, 100%, 94%);
+  --Bright-blue: rgb(56, 41, 224);
+
+  /* Neutral */
+  --Very-pale-blue: hsl(225, 100%, 98%);
+  --Desaturated-blue: hsl(224, 23%, 55%);
+  --Dark-blue: #1f2f56;
+
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Red Hat Display', sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  text-align: center;
+  background: url(./images/pattern-background-desktop.svg)no-repeat;
+  background-size: contain;
+  background-color: var(--Pale-blue);  
+}
+
+.main-container{
+  height: 95vh;    
+  align-items: center;
+  justify-content: center;
+  display: flex; 
+  align-items: center;
+}
+
+.container{
+  width: 450px;
+  height: 700px;
+  background-color: #fff;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  overflow: hidden;  
+  box-shadow:  0px 10px 50px rgba(131, 126, 126, 0.8);
+            
+}
+
+.text-center{
+  text-align: center;
+}
+
+.inner-container{
+  margin: auto;
+  width: 85%;  
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.inner-container .title{
+ 
+  font-size: 1.9rem;
+  font-weight: 900;
+  color: var(--Dark-blue);
+  padding-top: 2rem;
+  margin-bottom: 5px;
+}
+
+
+.note{
+  color: #69779b;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.plan-container{ 
+  background: var(--Very-pale-blue);
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px;
+}
+
+.anual-plan{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.anual-plan div{
+  margin-left: 20px;
+}
+
+.anual-plan h5{
+  font-weight: 700;
+  font-size: 1rem;
+}
+.anual-plan p{
+ color: #69779b;
+}
+
+.plan-container .change{
+ font-weight: 700;
+ font-size: 0.9rem;
+ transition: 0.3s ease;
+ color: var(--Bright-blue);
+ }
+.plan-container .change:hover{
+  text-decoration: none;
+  opacity: 0.7;
+}
+
+
+a.proceed-btn{
+  color: #fff;
+  display: block;
+  border: none;
+  border-radius: 15px;
+  background: var(--Bright-blue);
+  padding: 15px 0;
+  text-decoration: none;
+  font-weight: 700;
+ margin: 35px 0;
+ box-shadow:  0px 10px 20px rgba(56, 41, 224, 0.5);
+ transition: 0.3s ease;
+}
+
+a.proceed-btn:hover{
+opacity: 0.7;
+}
+
+a.cancel-btn{
+  color:var(--Desaturated-blue);
+  text-decoration: none;
+  font-weight: 900;
+  transition: 0.3s ease;
+}
+
+a.cancel-btn:hover{
+  color:var(--Dark-blue);  
+}
+
+.attribution{
+  font-size: 11px;
+}
+
+@media (min-width: 375px) {
+  .container{
+    width: 350px;
+    height: 600px;
+    background-color: #fff;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    overflow: hidden;  
+    box-shadow:  0px 10px 50px rgba(190, 190, 190, 0.8);              
+  }
+  .inner-container .title{
+ 
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: var(--Dark-blue);
+    padding-top: 1rem;
+    margin-bottom: 5px;
+  }
+
+  .note{  
+    font-size: 14px;
+    margin-bottom: 10px;
+    
+  }
+
+  .anual-plan h5{
+    font-weight: 700;
+    font-size: 14px;
+  }
+  .anual-plan p{
+   color: #69779b;
+   font-size: 14px;
+  }
+  
+  .plan-container .change{
+   font-weight: 700;
+   font-size: 0.9rem;
+   }
+   .plan-container{ 
+    
+    padding: 15px;
+  }
+
+  a.proceed-btn{
+ 
+   margin: 20px 0;
+  
+  }
+
+} ;
